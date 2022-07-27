@@ -1,0 +1,11 @@
+http://github.com/erikwijmans/etw_pytorch_utils/archive/v1.1.1.zip
+h5py
+numpy
+pprint
+enum34
+future
+tqdm
+plyfile
+opencv-python
+matplotlib
+open3d==0.9.0.0

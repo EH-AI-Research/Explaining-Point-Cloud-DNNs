@@ -1,0 +1,7 @@
+.idea/*
+shapenet_part/*
+pre-trained/*
+tmp/*
+unique_samples/*
+experiments-point-grad-cam.zip
+diagrams/*
