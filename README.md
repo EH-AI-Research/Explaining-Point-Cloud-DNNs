@@ -1,15 +1,14 @@
 # Explaining Deep Neural Networks for Point Clouds using Gradient-based Visualisations
 Created by Jawad Tayyub, Muhammad Sarmad, Nicolas Schönborn (equal contributions).
 
-## Introduction and Abstract
-This repository is the code release for our submission which is currently under review. An arxiv link will be added soon.
+This repository is the code release for our submission which is currently under review. We provide the Point Grad CAM and PcSM code for Pointnet, Pointnet++ and DGCNN model implementations (with Pytorch) on ShapeNet data and pre-trained model.
 
-Explaining decisions made by deep neural networks is a rapidly advancing research topic. In recent years, several approaches have attempted to provide visual explanations of decisions made by neural networks designed for structured 2D image input data. In this paper, we propose a novel approach to generate coarse visual explanations of networks designed to classify unstructured 3D data, namely point clouds. Our method uses gradients flowing back to the final feature map layers and maps these values as contributions of the corresponding points in the input point cloud. Due to dimensionality disagreement and lack of spatial consistency between input points and final feature maps, our approach combines gradients with points dropping to compute explanations of different parts of the point cloud iteratively. The generality of our approach is tested on various point cloud classification networks, including 'single object' networks PointNet, PointNet++, DGCNN, and a 'scene' network VoteNet. Our method generates symmetric explanation maps that highlight important regions and provide insight into the decision-making process of network architectures. We perform an exhaustive evaluation of trust and interpretability of our explanation method against comparative approaches using quantitative, quantitative and human studies. All our code is implemented in PyTorch and will be made publicly available
+Arxiv link: https://arxiv.org/abs/2207.12984
 
-In this repository, we provide the Point Grad CAM and PcSM code for Pointnet, Pointnet++ and DGCNN model implementations (with Pytorch) on ShapeNet data and pre-trained model.
+## Abstract
+Explaining decisions made by deep neural networks is a rapidly advancing research topic. In recent years, several approaches have attempted to provide visual explanations of decisions made by neural networks designed for structured 2D image input data. In this paper, we propose a novel approach to generate coarse visual explanations of networks designed to classify unstructured 3D data, namely point clouds. Our method uses gradients flowing back to the final feature map layers and maps these values as contributions of the corresponding points in the input point cloud. Due to dimensionality disagreement and lack of spatial consistency between input points and final feature maps, our approach combines gradients with points dropping to compute explanations of different parts of the point cloud iteratively. The generality of our approach is tested on various point cloud classification networks, including 'single object' networks PointNet, PointNet++, DGCNN, and a 'scene' network VoteNet. Our method generates symmetric explanation maps that highlight important regions and provide insight into the decision-making process of network architectures. We perform an exhaustive evaluation of trust and interpretability of our explanation method against comparative approaches using quantitative, quantitative and human studies. All our code is implemented in PyTorch and will be made publicly available.
 
 ## Setup 
-
 The code has been tested with Python 3.7, CUDA 10.2 and PyTorch 1.2 on Ubuntu 18.04.
 
 Pointnet++ works only on GPU with CUDA. For Pointnet and DGCNN, a GPU is optional.
